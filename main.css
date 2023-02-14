@@ -1,0 +1,93 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  height: auto;
+  display: block;
+  height: auto;
+}
+
+.container {
+  margin-top: 5em;
+  background-color: rgb(250, 235, 215);
+  padding: 2em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+}
+
+.container p {
+  margin-top: 2em;
+}
+
+.logo {
+  font-family: fantasy;
+  color: crimson;
+  padding-right: 8rem;
+  text-decoration: line-through;
+}
+
+.nav-div {
+  margin: -10px;
+  padding: 20px 0 20px 0;
+  background-color: rgb(250, 235, 215);
+
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.nav-div li {
+  padding-right: 3em;
+}
+
+a {
+  text-decoration: none;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 25px;
+  color: black;
+}
+
+.todo {
+  font-size: 18px;
+  margin-bottom: 25em;
+  margin-left: 2em;
+}
+
+h1 {
+  color: red;
+}
+
+footer {
+  background-color: #f2f2f2;
+  height: 50px;
+  padding: 20px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+img {
+  width: 100vw;
+  height: 40vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .nav-div {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .logo {
+    padding: 0;
+  }
+}
