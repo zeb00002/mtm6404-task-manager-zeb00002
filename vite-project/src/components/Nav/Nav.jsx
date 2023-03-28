@@ -1,12 +1,11 @@
 import React from 'react'
+import './nav.css'
 
-const Nav = (props) => {
+const Nav = () => {
   return (
     <nav>
-       
-      <ul>
-      {props.children} 
-      </ul> 
+    <h1>Capstone ToDo</h1>
+      
     </nav>
   )
 }

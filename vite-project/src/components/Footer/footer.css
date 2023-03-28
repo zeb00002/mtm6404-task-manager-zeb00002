@@ -1,0 +1,17 @@
+footer {
+    position: fixed;
+    width: 100vw;
+    height: 80px;
+    bottom: 0;
+    background-color: #363636;
+    padding: 1.7rem;
+    text-align: center;
+    color: white;
+    font-family: 'Rubik Iso', cursive;
+    
+  }
+  
+
+  footer p{
+    padding:0.5rem
+  }
