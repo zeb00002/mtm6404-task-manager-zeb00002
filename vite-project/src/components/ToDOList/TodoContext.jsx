@@ -1,4 +1,7 @@
+
+
 import React, { createContext, useState } from 'react';
+
 
 export const TodoContext = createContext();
 
@@ -9,6 +12,14 @@ export const TodoProvider = ({ children }) => {
   const [priority, setPriority] = useState('low');
 
   // Add todo
+//   const todoRef = db.collection('todos').doc();
+//   todoRef.set({
+//   id: todoRef.id,
+//   title: todoInput,
+//   completed: false,
+//   priority: priority,
+// });
+
   const addTodo = (title) => {
     if (title.trim() !== '') {
       const newTodo = {
@@ -24,7 +35,9 @@ export const TodoProvider = ({ children }) => {
 
   // Delete todo
   const deleteTodo = (id) => {
-    setTodos(todos.filter(todo => todo.id !== id));
+    db.collection('todos').doc(todoId).delete();
+
+    // setTodos(todos.filter(todo => todo.id !== id));
   };
 
   // Toggle todo completion

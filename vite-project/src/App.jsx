@@ -3,16 +3,12 @@
 //  ------------------------------------------------------------ 5:57 --------------------
 
 import React, { useState, useEffect } from 'react';
-import {AiFillPlusSquare} from 'react-icons/ai'
-import {TiTick} from 'react-icons/ti'
-import {BsCircle} from 'react-icons/bs'
-import {BsFillTrash3Fill} from 'react-icons/bs'
 import Nav from './components/Nav/Nav'
-import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import {Routes,Route} from 'react-router-dom';
 import List from './components/ToDOList/List';
 import { TodoProvider } from './components/ToDOList/TodoContext';
+import Footer from './components/Footer/Footer';
 function App() {
   
 
@@ -20,7 +16,7 @@ function App() {
     <div className='container__main'>
       
       <Routes>
-       <Route  path='/' element={<Header/>} />
+       <Route  path='/' element={<Header/>}/>
        <Route path="/" element={<Header />} />
           <Route
             path="/todolist"
@@ -34,6 +30,7 @@ function App() {
 
 
      </Routes>
+     <Footer />
         
       </div>
      

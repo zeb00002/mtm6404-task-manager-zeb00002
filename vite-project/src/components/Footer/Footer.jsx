@@ -8,14 +8,14 @@ const Footer = (props) => {
     return (
       <>
 
-      {/* <footer>
+      <footer>
         {isLoggedIn ? (
           <p>Welcome back! You are currently logged in.</p>
         ) : (
           <p>Sign in to access exclusive content and features.</p>
         )}
         <p>&copy; 2023 My Site. All rights reserved.</p>
-      </footer> */}
+      </footer>
       </>
     );
 }
